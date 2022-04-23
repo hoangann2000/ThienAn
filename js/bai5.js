@@ -1,16 +1,23 @@
 /**
  * khối 1: input
- *  a là chữ số tự cho
+ *  txtNumber là chữ số tự cho
  * khối 2: 
  *  khai báo a và sum
- *  xây dựng công thức sum = a % 10 + a / 10 - (a % 10)/10
+ *  xây dựng công thức sum = txtNumber % 10 + txtNumber / 10 - (txtNumber % 10)/10
  * khối 3: ouput 
  *  sum
  */
 
 
-var a = 34
-    sum = 0;
+var sum = 0;
+var result = document.getElementById("txtResult5")
 
-sum = a % 10 + a / 10 - (a % 10)/10
-console.log("tong 2 chu so = " + sum);
+function tinhTong() {
+    var txtNumber = document.getElementById("bai5").value;
+
+    sum = txtNumber % 10 + txtNumber / 10 - (txtNumber % 10)/10;
+    result.innerHTML = "Tổng = " + sum;
+    result.classList.add("styleText");
+}
+
+

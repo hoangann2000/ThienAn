@@ -9,10 +9,17 @@
  * khối 3 : 
  *  output 
  */
+var result1 = document.getElementById("txtResult1");
 
-var luong1Ngay = 100000;
-var soNgayLam = 5;
-var tongLuong = 0;
+function tinhTienLuong() {
+    var luong1Ngay = document.getElementById("luongNgay").value;
+    var soNgayLam =document.getElementById("soNgay").value;
+    var tongLuong = luong1Ngay * soNgayLam;
 
-tongLuong = luong1Ngay * soNgayLam
-console.log("Tong luong: " + tongLuong.toLocaleString())
+    result1.innerHTML = "Tổng lương = " + tongLuong.toLocaleString();
+
+    result1.classList.add("styleText");
+}
+
+
+

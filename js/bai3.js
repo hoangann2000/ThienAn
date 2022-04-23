@@ -10,10 +10,15 @@
  */
 
 var vnd = 23500;
-var usd = 5;
-var result = 0;
+var sum = 0;
+var result = document.getElementById("txtResult3");
 
-result = usd * vnd
-console.log(usd + " usd = " + result + " vnd");
+function tinhUsd(){
+    var usd = document.getElementById("usd").value;
+    sum = vnd * usd;
+    result.innerHTML = usd + " USD = " + sum.toLocaleString() + "VND";
+    result.classList.add("styleText");
+}
+
 
 

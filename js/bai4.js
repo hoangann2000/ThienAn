@@ -8,13 +8,15 @@
  *  dt , cv
  */
 
-var a = 10 
-    b = 5
-    cv = 0
-    dt = 0;
-
-dt = a * b 
-cv = (a+b) * 2
-
-console.log("Diện tích HCN = " + dt );
-console.log("Chi vi HCN = " + cv);
+var dt = 0;
+var cv = 0;
+var result = document.getElementById("txtResult4");
+    
+function tinhDienTich(){
+    var width = document.getElementById("width").value;
+    var height = document.getElementById("height").value;
+    dt = width * height;
+    cv = (Number(width)  +Number(height))*2;
+    result.innerHTML = " Diện tích HCN = " + dt + " Và Chu vi HCN = " + cv;
+    result.classList.add("styleText");
+}

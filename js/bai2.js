@@ -8,14 +8,23 @@
  * khối 3: output
  *  tb
  */
-
-var num1 = 5.5;
-var num2 = 6.5;
-var num3 = 11.2;
-var num4 = 4.555;
-var num5 = 6.542;
 var tb = 0;
+var result = document.getElementById("txtResult2")
 
-tb = (num1 + num2 + num3 + num4 + num5) /5
-console.log("Trung binh: " + Math.round(tb));
-console.log("Trung binh: " + tb.toFixed(2));
+function tinhTrungBinh() {
+    var num1 = document.getElementById("num1").value;
+    var num2 = document.getElementById("num2").value;
+    var num3 = document.getElementById("num3").value;
+    var num4 = document.getElementById("num4").value;
+    var num5 = document.getElementById("num5").value;
+
+    tb = (Number(num1) + Number(num2) + Number(num3) +Number(num4) +Number(num5)) / 5;
+
+    result.innerHTML = "Tổng trung bình cộng = " + tb;
+    result.classList.add("styleText");
+    
+}
+
+// tb = (num1 + num2 + num3 + num4 + num5) /5
+// console.log("Trung binh: " + Math.round(tb));
+// console.log("Trung binh: " + tb.toFixed(2));

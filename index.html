@@ -5,14 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 <body>
+
+    <div class="container">
+        <div class="w-50">
+            <h2>Bài 1</h2>
+            <form>
+                <div class="form-group">
+                  <label for="luongNgay">Lương 1 ngày</label>
+                  <input type="number" class="form-control" id="luongNgay">
+                </div>
+                <div class="form-group">
+                  <label for="soNgay">Số Ngày làm</label>
+                  <input type="number" class="form-control" id="soNgay">
+                </div>
+                <button onclick="tinhTienLuong()" type="button" class="btn btn-primary">Tính</button>
+                <p id="txtResult1"></p>
+              </form>
+
+
+              <h2 class="mt-5">Bài 2</h2>
+              <form>
+                <div class="form-group">
+                  <label for="num1">Số thứ 1</label>
+                  <input type="number" class="form-control" id="num1">
+                </div>
+                <div class="form-group">
+                  <label for="num2">Số thứ 2</label>
+                  <input type="number" class="form-control" id="num2">
+                </div>
+                <div class="form-group">
+                    <label for="num3">Số thứ 3</label>
+                    <input type="number" class="form-control" id="num3">
+                  </div>
+                  <div class="form-group">
+                    <label for="num4">Số thứ 4</label>
+                    <input type="number" class="form-control" id="num4">
+                  </div>
+                  <div class="form-group">
+                    <label for="num5">Số thứ 5</label>
+                    <input type="number" class="form-control" id="num5">
+                  </div>
+                <button onclick="tinhTrungBinh()" type="button" class="btn btn-primary">Tính</button>
+                <p id="txtResult2"></p>
+              </form>
+
+              <h2 class="mt-5">Bài 3</h2>
+            <form>
+                <div class="form-group">
+                  <label for="usd">USD</label>
+                  <input type="number" class="form-control" id="usd">
+                </div>
+                <button onclick="tinhUsd()" type="button" class="btn btn-primary">Tính</button>
+                <p id="txtResult3"></p>
+            </form>
+
+
+              <h2 class="mt-5">Bài 4</h2>
+            <form>
+                <div class="form-group">
+                  <label for="width">Chiều dài</label>
+                  <input type="number" class="form-control" id="width">
+                </div>
+                <div class="form-group">
+                  <label for="height">Chiều rộng</label>
+                  <input type="number" class="form-control" id="height">
+                </div>
+                <button onclick="tinhDienTich()" type="button" class="btn btn-primary">Tính</button>
+                <p id="txtResult4"></p>
+            </form>
+
+
+            <h2 class="mt-5">Bài 5</h2>
+            <form>
+                <div class="form-group">
+                  <input type="number" class="form-control" id="bai5">
+                </div>            
+                <button onclick="tinhTong()" type="button" class="btn btn-primary">Tính</button>
+                <p id="txtResult5"></p>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
     <!-- <script src="./js/bai1.js"></script> -->
     <!-- <script src="./js/bai2.js"></script> -->
     <!-- <script src="./js/bai3.js"></script> -->
     <!-- <script src="./js/bai4.js"></script> -->
     <script src="./js/bai5.js"></script>
-
 </body>
 </html>
